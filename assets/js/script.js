@@ -180,10 +180,12 @@
         // Then give it an ID in the following form:
         // "item-4" or "item-3" or "item-99", where the number is equal to toDoCount.
         // Then set the to-do "value" as text to this <p> element.
+
         var toDoItem = $("<input>");
         console.log(toDoItem)
         toDoItem.attr("id", "item-" + toDoCount);
         toDoItem.text(toDoTask1);
+
         // Create a button with unique identifiers based on what number it is in the list. Again use jQuery to do this.
         // Give your button a data attribute called data-to-do and a class called "checkbox".
         // Lastly add a checkmark inside.
@@ -212,31 +214,17 @@
 
       var toDoCount = 0;
       var todos = [];
-      // var todosObj = {
-  
-      //     tasks9am: document.getElementById('row1col2input').value
-      // }
-      // var todosObjArray = []
-  
-        $("#row-1").on("click",  function(event) {
-          event.preventDefault();
-          // Get the to-do "value" from the textbox and store it a variable
 
-          
+  // Click on ROW 1 button and save data in localStorage
+
+        $("#row-1").on("click", "#row1col3btn",  function(event) {
+          event.preventDefault();
+          // Get the to-do "value" from the textbox and store it a variable          
           var toDoTask1 = $("#row1col2input")
             .val()
             .trim()
-
-
-        //  var index = $("#row1col2input")
-        //     .val()
-        //     .trim()
-
-            // $("#row1col2input")
-            // .val($.trim($("#row1col2input").val()));
   
           console.log(toDoTask1);  
-        //   console.log(index);
           todos.push(toDoTask1);
   
   
@@ -248,26 +236,17 @@
         });
 
 
+  // Click on ROW 2 button and save data in localStorage
 
-
-
-
-
-
-
-        $("#row-2").on("click",  function(event) {
+        $("#row-2").on("click", "#row2col3btn", function(event) {
             event.preventDefault();
             // Get the to-do "value" from the textbox and store it a variable
-            var toDoTask2 = 
-            $("#row2col2input")
+            var toDoTask2 = $("#row2col2input")
               .val()
               .trim();
-            // $("#row2col2input")
-            // .val($.trim($("#row2col2input").val()));
     
             console.log(toDoTask2);  
             todos.push(toDoTask2);
-    
     
     
             localStorage.setItem("todoList", JSON.stringify(todos));
@@ -278,41 +257,170 @@
 
 
 
+      // Click on ROW 3 button and save data in localStorage
+
+      $("#row-3").on("click", "#row3col3btn", function(event) {
+        event.preventDefault();
+        // Get the to-do "value" from the textbox and store it a variable
+        var toDoTask3 = $("#row3col2input")
+          .val()
+          .trim();
+
+        console.log(toDoTask3);  
+        todos.push(toDoTask3);
+
+
+        localStorage.setItem("todoList", JSON.stringify(todos));
+        renderOneTodo(toDoTask3);
+        // Add to the toDoCount
+        toDoCount++;
+      });  
+      
+      
+    
+      // Click on ROW 4 button and save data in localStorage
+
+
+      $("#row-4").on("click", "#row4col3btn", function(event) {
+        event.preventDefault();
+        // Get the to-do "value" from the textbox and store it a variable
+        var toDoTask4 = $("#row4col2input")
+          .val()
+          .trim();
+
+        console.log(toDoTask4);  
+        todos.push(toDoTask4);
+
+
+        localStorage.setItem("todoList", JSON.stringify(todos));
+        renderOneTodo(toDoTask4);
+        // Add to the toDoCount
+        toDoCount++;
+      });  
+
+
+    // Click on ROW 5 button and save data in localStorage
+
+      $("#row-5").on("click", "#row5col3btn", function(event) {
+        event.preventDefault();
+        // Get the to-do "value" from the textbox and store it a variable
+        var toDoTask5 = $("#row5col2input")
+          .val()
+          .trim();
+
+        console.log(toDoTask5);  
+        todos.push(toDoTask5);
+
+
+        localStorage.setItem("todoList", JSON.stringify(todos));
+        renderOneTodo(toDoTask5);
+        // Add to the toDoCount
+        toDoCount++;
+      });  
+
+
+    
+    // Click on ROW 6 button and save data in localStorage
+    
+      $("#row-6").on("click", "#row6col3btn", function(event) {
+        event.preventDefault();
+        // Get the to-do "value" from the textbox and store it a variable
+        var toDoTask6 = $("#row6col2input")
+          .val()
+          .trim();
+
+        console.log(toDoTask6);  
+        todos.push(toDoTask6);
+
+
+        localStorage.setItem("todoList", JSON.stringify(todos));
+        renderOneTodo(toDoTask6);
+        // Add to the toDoCount
+        toDoCount++;
+      });  
+
+
+    
+    // Click on ROW 7 button and save data in localStorage
+    
+      $("#row-7").on("click", "#row7col3btn", function(event) {
+        event.preventDefault();
+        // Get the to-do "value" from the textbox and store it a variable
+        var toDoTask7 = $("#row7col2input")
+          .val()
+          .trim();
+
+        console.log(toDoTask7);  
+        todos.push(toDoTask7);
+
+
+        localStorage.setItem("todoList", JSON.stringify(todos));
+        renderOneTodo(toDoTask7);
+        // Add to the toDoCount
+        toDoCount++;
+      });  
+
+
+    // Click on ROW 8 button and save data in localStorage
+    
+        $("#row-8").on("click", "#row8col3btn", function(event) {
+            event.preventDefault();
+            // Get the to-do "value" from the textbox and store it a variable
+            var toDoTask8 = $("#row8col2input")
+              .val()
+              .trim();
+    
+            console.log(toDoTask8);  
+            todos.push(toDoTask8);
+    
+    
+            localStorage.setItem("todoList", JSON.stringify(todos));
+            renderOneTodo(toDoTask8);
+            // Add to the toDoCount
+            toDoCount++;
+          });  
+
+    // Click on ROW 9 button and save data in localStorage
+    
+    $("#row-9").on("click", "#row9col3btn", function(event) {
+        event.preventDefault();
+        // Get the to-do "value" from the textbox and store it a variable
+        var toDoTask9 = $("#row9col2input")
+          .val()
+          .trim();
+
+        console.log(toDoTask9);  
+        todos.push(toDoTask9);
+
+
+        localStorage.setItem("todoList", JSON.stringify(todos));
+        renderOneTodo(toDoTask9);
+        // Add to the toDoCount
+        toDoCount++;
+      });  
+
+
+
 
 
 
 
           
 
-    //   const inputKey = document.getElementById("row1col2input").focus();
-    //   const btnSave = document.getElementById("firstButton");
-    //   const outPut = document.getElementById("row1col2input")
-
-    //   firstButton.onclick = function() {
-
-    //     var key = JSON.stringify(inputKey.value);
-        
-    //     console.log(key);
-
-    //     if (key) {
-    //         localStorage.setItem("key", key);
-    //         // location.reload();
-    //     }
-
-    //   }
 
 
-    // //   todos = [];
 
-    // //   function getToDos () {
-    // //       var str = localStorage.getItem("todos");
-    // //       todos = JSON.parse(str);
-    // //       if (!todos) {
-    // //           todos = []
-    // //       }
-    // //   }
 
-    // //   getToDos();
+
+
+
+
+
+
+
+
+
+
 
 
     // //   for (var i = 0; i < localStorage.length ; i++ ) {
