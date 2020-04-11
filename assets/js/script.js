@@ -27,133 +27,142 @@ console.log(currentTimeInHours);
 //set css for row 1
 if(currentTimeInHours < row1Time ) {
     console.log("time is in future");
-    $("#row1col2").addClass("future")
+    $("#row1col2").addClass("future");
+    $("#row1col2input").addClass("future");
 }
-
 else if (currentTimeInHours > row1Time) {
-    console.log("time is in the past")
-    $("#row1col2").addClass("past")
+    console.log("time is in the past");
+    $("#row1col2").addClass("past");
+    $("#row1col2input").addClass("past");
 }
 else if (currentTimeInHours = row1Time) {
     console.log("current time");
-    $("#row1col2").addClass("present")
-
+    $("#row1col2").addClass("present");
+    $("#row1col2input").addClass("present");
 }
 
 //set css for row 2
 if(currentTimeInHours < row2Time ) {
     console.log("time is in future");
-    $("#row2col2").addClass("future")
+    $("#row2col2").addClass("future");
+    $("#row2col2input").addClass("future");
 }
-
 else if (currentTimeInHours > row2Time) {
-    console.log("time is in the past")
-    $("#row2col2").addClass("past")
+    console.log("time is in the past");
+    $("#row2col2").addClass("past");
+    $("#row2col2input").addClass("past");
 }
 else if (currentTimeInHours = row2Time) {
     console.log("current time");
-    $("#row2col2").addClass("present")
-
+    $("#row2col2").addClass("present");
+    $("#row2col2input").addClass("present");
 }
 
 //set css for row 3
 if(currentTimeInHours < row3Time ) {
     console.log("time is in future");
-    $("#row3col2").addClass("future")
+    $("#row3col2").addClass("future");
+    $("#row3col2input").addClass("future");
 }
-
 else if (currentTimeInHours > row3Time) {
-    console.log("time is in the past")
-    $("#row3col2").addClass("past")
+    console.log("time is in the past");
+    $("#row3col2").addClass("past");
+    $("#row3col2input").addClass("past");
 }
 else if (currentTimeInHours = row3Time) {
     console.log("current time");
-    $("#row3col2").addClass("present")
-
+    $("#row3col2").addClass("present");
+    $("#row3col2input").addClass("present");
 }
 
 
 //set css for row 4
 if(currentTimeInHours < row4Time ) {
     console.log("time is in future");
-    $("#row4col2").addClass("future")
+    $("#row4col2").addClass("future");
+    $("#row4col2input").addClass("future");
 }
-
 else if (currentTimeInHours > row4Time) {
-    console.log("time is in the past")
-    $("#row4col2").addClass("past")
+    console.log("time is in the past");
+    $("#row4col2").addClass("past");
+    $("#row4col2input").addClass("past");
 }
 else if (currentTimeInHours = row4Time) {
     console.log("current time");
-    $("#row4col2").addClass("present")
-
+    $("#row4col2").addClass("present");
+    $("#row4col2input").addClass("present");
 }
 
 
 //set css for row 5
 if(currentTimeInHours < row5Time ) {
     console.log("time is in future");
-    $("#row5col2").addClass("future")
+    $("#row5col2").addClass("future");
+    $("#row5col2input").addClass("future");
 }
-
 else if (currentTimeInHours > row5Time) {
-    console.log("time is in the past")
-    $("#row5col2").addClass("past")
+    console.log("time is in the past");
+    $("#row5col2").addClass("past");
+    $("#row5col2input").addClass("past");
 }
 else if (currentTimeInHours = row5Time) {
     console.log("current time");
-    $("#row5col2").addClass("present")
-
+    $("#row5col2").addClass("present");
+    $("#row5col2input").addClass("present");
 }
 
 
 //set css for row 6
 if(currentTimeInHours < row6Time ) {
     console.log("time is in future");
-    $("#row6col2").addClass("future")
+    $("#row6col2").addClass("future");
+    $("#row6col2input").addClass("future");
 }
-
 else if (currentTimeInHours > row6Time) {
-    console.log("time is in the past")
-    $("#row6col2").addClass("past")
+    console.log("time is in the past");
+    $("#row6col2").addClass("past");
+    $("#row6col2input").addClass("past");
 }
 else if (currentTimeInHours = row6Time) {
     console.log("current time");
-    $("#row6col2").addClass("present")
-
+    $("#row6col2").addClass("present");
+    $("#row6col2input").addClass("present");
 }
 
 //set css for row 7
 if(currentTimeInHours < row7Time ) {
     console.log("time is in future");
-    $("#row7col2").addClass("future")
+    $("#row7col2").addClass("future");
+    $("#row7col2input").addClass("future");
 }
-
 else if (currentTimeInHours > row7Time) {
-    console.log("time is in the past")
-    $("#row7col2").addClass("past")
+    console.log("time is in the past");
+    $("#row7col2").addClass("past");
+    $("#row7col2input").addClass("past");
 }
 else if (currentTimeInHours = row7Time) {
     console.log("current time");
-    $("#row7col2").addClass("present")
-
+    $("#row7col2").addClass("present");
+    $("#row7col2input").addClass("present");
 }
 
 
 //set css for row 8
 if(currentTimeInHours < row8Time ) {
     console.log("time is in future");
-    $("#row8col2").addClass("future")
+    $("#row8col2").addClass("future");
+    $("#row8col2input").addClass("future");
 }
 
 else if (currentTimeInHours > row8Time) {
-    console.log("time is in the past")
-    $("#row8col2").addClass("past")
+    console.log("time is in the past");
+    $("#row8col2").addClass("past");
+    $("#row8col2input").addClass("past");
 }
 else if (currentTimeInHours = row8Time) {
     console.log("current time");
-    $("#row8col2").addClass("present")
-
+    $("#row8col2").addClass("present");
+    $("#row8col2input").addClass("present");
 }
 
 
