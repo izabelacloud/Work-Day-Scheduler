@@ -167,61 +167,12 @@
 
 
 
-//Save task in localStorage
-
-//Get item from localStorage
-
-//Remove task
-
-//Remove task from localStorage
 
 
 
 
-    //    //On Click event associated with the add-to-do function
-    //   $("#row1col2input").on("click", function(event) {
-    //     event.preventDefault();
-    //     // Get the to-do "value" from the textbox and store it a variable
-    //     var toDoTask = $(this)
-    //       .val()
-    //       .trim();
-    //     todos.push(toDoTask);
-    //     localStorage.setItem("todoList", todos);
-    //     renderOneTodo(toDoTask);
-    //     // Add to the toDoCount
-    //     toDoCount++;
-    //   });
 
-
-
-
-    var todos = [];
-    // var todosObj = {
-
-    //     tasks9am: document.getElementById('row1col2input').value
-    // }
-    // var todosObjArray = []
-
-      $("#row-1").on("click",  function(event) {
-        // event.preventDefault();
-        // Get the to-do "value" from the textbox and store it a variable
-        var toDoTask1 = $("#row1col2input")
-          .val()
-          .trim()
-
-
-        console.log(toDoTask1);  
-        todos.push(toDoTask1);
-
-
-
-        localStorage.setItem("todoList", todos);
-        // renderOneTodo(toDoTask);
-        // Add to the toDoCount
-        // toDoCount++;
-      });
-
-      var renderOneTodo = function() {
+      var renderOneTodo = function(toDoTask1) {
         var toDoTask1 = $("#row1col2input")
         .val()
         .trim();
@@ -229,14 +180,14 @@
         // Then give it an ID in the following form:
         // "item-4" or "item-3" or "item-99", where the number is equal to toDoCount.
         // Then set the to-do "value" as text to this <p> element.
-        // var toDoItem = $("<p>");
-        // console.log(toDoItem)
-        // toDoItem.attr("id", "item-" + toDoCount);
-        // toDoItem.text(toDoTask);
+        var toDoItem = $("<input>");
+        console.log(toDoItem)
+        toDoItem.attr("id", "item-" + toDoCount);
+        toDoItem.text(toDoTask1);
         // Create a button with unique identifiers based on what number it is in the list. Again use jQuery to do this.
         // Give your button a data attribute called data-to-do and a class called "checkbox".
         // Lastly add a checkmark inside.
-        // var toDoClose = $("<button>");
+        //var toDoClose = $("<button>");
         // toDoClose.attr("data-to-do", toDoCount);
         // toDoClose.addClass("checkbox");
         // toDoClose.text("✓");
@@ -247,10 +198,11 @@
         // Clear the textbox when done
         // $("#row1col2input").val("");
       }
-      var todosStr = localStorage.getItem("todoList") || "";
-      var todos = todosStr.split(",")
+
+      var todosStr = localStorage.getItem("todoList") || ""  ;
+      var todos = todosStr.split(" ");
       for (var i = 0; i < todos.length; i++) {
-          var currentTodo = todos[i]
+          var currentTodo = todos[i];
           if (currentTodo != "") {
               renderOneTodo(currentTodo);
           }
@@ -258,10 +210,79 @@
 
 
 
+      var toDoCount = 0;
+      var todos = [];
+      // var todosObj = {
+  
+      //     tasks9am: document.getElementById('row1col2input').value
+      // }
+      // var todosObjArray = []
+  
+        $("#row-1").on("click",  function(event) {
+          event.preventDefault();
+          // Get the to-do "value" from the textbox and store it a variable
+
+          
+          var toDoTask1 = $("#row1col2input")
+            .val()
+            .trim()
+
+
+        //  var index = $("#row1col2input")
+        //     .val()
+        //     .trim()
+
+            // $("#row1col2input")
+            // .val($.trim($("#row1col2input").val()));
+  
+          console.log(toDoTask1);  
+        //   console.log(index);
+          todos.push(toDoTask1);
+  
+  
+  
+          localStorage.setItem("todoList", JSON.stringify(todos));
+          renderOneTodo(toDoTask1);
+          // Add to the toDoCount
+          toDoCount++;
+        });
 
 
 
 
+
+
+
+
+
+        $("#row-2").on("click",  function(event) {
+            event.preventDefault();
+            // Get the to-do "value" from the textbox and store it a variable
+            var toDoTask2 = 
+            $("#row2col2input")
+              .val()
+              .trim();
+            // $("#row2col2input")
+            // .val($.trim($("#row2col2input").val()));
+    
+            console.log(toDoTask2);  
+            todos.push(toDoTask2);
+    
+    
+    
+            localStorage.setItem("todoList", JSON.stringify(todos));
+            renderOneTodo(toDoTask2);
+            // Add to the toDoCount
+            toDoCount++;
+          });    
+
+
+
+
+
+
+
+          
 
     //   const inputKey = document.getElementById("row1col2input").focus();
     //   const btnSave = document.getElementById("firstButton");
