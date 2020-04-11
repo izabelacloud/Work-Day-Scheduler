@@ -1,6 +1,6 @@
 # Work Day Scheduler 
 
-This page represents the a workday scheduler that is aimed to provide the following funcitonality:
+This page represents the a workday scheduler that is aimed to provide the following functionality:
 1. Show the current date when the page is loaded
 1. Display the current date on the top of the page
 1. SHow time blocks for standard business hours
