@@ -18,7 +18,7 @@ var row5Time = 13;
 var row6Time = 14;
 var row7Time = 15;
 var row8Time = 16;
-var row8Time = 17;
+
 
 var currentTimeInHours = moment().format("h")
 console.log(currentTimeInHours);
